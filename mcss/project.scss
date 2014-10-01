@@ -20,7 +20,6 @@ body{
 	@extend .inbox;
 }
 
-
 /*=================
  base figure
 =================*/
@@ -41,19 +40,6 @@ a.rounded{
 		border: 2px solid #000;
 	};
 }
-
-/*================= 
- aside calendar 
-=================*/
-.calendar{
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 73px;
-	height: 100%;
-	background: #222;
-}
-
 
 
 /*================= 
@@ -126,6 +112,178 @@ header{
 	float: left;
 }
 
+/*=================
+ calendar - aside
+=================*/
+
+.calendar{
+	position: fixed;
+	right: -297px;
+	top: 0;
+	overflow: hidden;
+	height: 100%;
+	background: #222;
+	transition: all .3s ease;
+	z-index: 1100;
+
+	.container{
+		width: 370px;
+		height: 100%;
+	}
+
+	.header{
+		height: 98px;
+		background: #ff3366 url(img/ico-calendar.png) no-repeat 26px 62%;
+		cursor: pointer;
+
+		.current-date{
+			font-size: 22px;
+			line-height: 26px;
+			color: #fff;
+			padding: 40px 0 0 95px;
+		}
+	}
+
+	.controls{
+		padding-top: 10px;
+		width: 73px;
+
+		a{
+			display: block;
+			width: 100%;
+			text-decoration: none;
+			color: #fff;
+			text-align: center;
+			font-size: 13px;
+			line-height: 24px;
+
+			span{
+				display: block;
+				font-size: 22px;
+				line-height: 26px;	
+			}
+		}
+
+		.control{
+			height: 28px;
+			margin: 20px 0;
+
+			&:hover{
+				opacity: .8;
+			}
+		}
+
+		.control.disabled{
+			opacity: .5;
+			cursor: default;
+
+			&:hover{
+				opacity: .5;
+			}
+		}
+
+		.prev{
+			background: url(img/ico-up.png) no-repeat center;
+		}
+
+		.next{
+			background: url(img/ico-down.png) no-repeat center;
+		}
+
+		.date-container{
+			height: 420px;
+			overflow: hidden;
+			position: relative;
+
+			.date-slider{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				transition: all .3s ease;
+			}
+
+			a{
+				padding: 5px 0;
+
+				&:hover{
+					background: #fff;
+					color: #000;
+				}
+
+				&.active{
+					background: #fff;
+					color: #000;
+				}
+			}
+		}
+
+	}
+
+	.content{
+		width: 297px;
+		height: 100%;
+		background: #fff;
+
+		img{width: 100%}
+
+		.content-text{
+			padding: 20px;
+			
+			h2{
+				font-size: 36px;
+				line-height: 44px;
+				color: #ff3366;
+			}	
+
+			p{
+				font-size: 18px;
+				color: #000;
+				line-height: 24px;
+				margin: 10px 0 20px;
+			}
+
+			.time{
+				width: 80px;
+				font-size: 13px;
+				line-height: 16px;
+			}
+
+			.rounded{
+				text-transform: uppercase;
+				color: #686868;
+				border: 2px solid #686868;
+				font-size: 20px;
+				padding: 10px 10px 17px;
+				margin-top: 12px;
+
+				&:hover{
+					color: #000;
+					border: 2px solid #000;
+				}
+			}
+		}
+	}
+}
+
+.calendar.active{
+	right: 0;
+}
+
+.calendar.active .over{
+	display: block;
+}
+
+.over{
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+}
 
 
 /*=================
