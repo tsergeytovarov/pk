@@ -21,6 +21,7 @@ $(function(){
 	$('.calendar').find('.header').on('click', function(){
 		$(this).parents('.calendar').toggleClass('active');
 		$('.over').toggleClass('active');
+		$('body, html').toggleClass('hidden');
 	})
 
 	// чехорда дат в контролах
@@ -37,6 +38,7 @@ $(function(){
 			if ( !$('.calendar').hasClass('active') ) { 
 				$('.calendar').addClass('active');
 				$('.over').addClass('active');
+				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
 			value_element_bottom = value_element_bottom - 60;		
@@ -55,6 +57,7 @@ $(function(){
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
 				$('.over').addClass('active');
+				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
 			value_element_bottom = value_element_bottom + 60;		
@@ -73,6 +76,7 @@ $(function(){
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
 				$('.over').addClass('active');
+				$('body, html').addClass('hidden');
 			}
 			$('.date-slider').find('a').removeClass('active');
 			$(this).addClass('active');
@@ -84,6 +88,7 @@ $(function(){
 		$('.over').on('click',function(){
 			$(this).removeClass('active');
 			$('.calendar').removeClass('active');
+			$('body, html').removeClass('hidden');
 		})
 
 	// скролл наверх

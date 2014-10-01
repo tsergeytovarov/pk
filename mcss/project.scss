@@ -19,7 +19,9 @@ body{
 	width: 100%;
 	@extend .inbox;
 }
-
+.hidden{
+	overflow: hidden;
+}
 /*=================
  base figure
 =================*/
