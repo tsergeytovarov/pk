@@ -1,0 +1,259 @@
+/* start the base fraimwork styles. Can include base construction - forms/buttins/navigation and other */
+
+/* main fraimwork start here */
+.inbox{
+	box-sizing: border-box;
+}
+.to-left{ float: left }
+.to-right{ float: right }
+.inline{
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    zoom: 1; 
+}
+.clear{
+	content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clearfix:after{ @extend .clear; }
+
+/* basic typography */
+@font-face{
+    font-family: "Helios";
+    src:    url('fonts/helios.ttf'),
+            url('fonts/helios.otf'),
+            url('fonts/helios.eot'),
+            url('fonts/helios.woff');
+}
+body{
+    font-family: 'Helios', sans-serif;
+}
+h1{
+    
+}
+h2{
+    
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+p,li{
+    font-size: 14px;
+}
+strong, b{
+
+}
+a{
+    font-size: 14px;
+    text-decoration: underline;
+
+	&:hover{
+        text-decoration: none;
+	}
+}
+ul{
+    li{
+        
+    }
+}
+
+/* form style input and other */
+
+form{
+    input[type='text']{
+        box-sizing: border-box;
+        outline: none;
+        border: 0;
+        background: #f0f0f0;
+        height: 33px;
+        border-radius: 3px;
+        padding: 0 15px;
+        font-family: 'Helios', sans-serif;
+        &:focus{
+        }
+    }
+    input::-webkit-input-placeholder{
+        
+    }
+    input::-moz-placeholde{
+        
+    }
+    label{
+        cursor: pointer;
+    }
+
+    button{
+        font-family: 'Helios', sans-serif;
+        cursor: pointer;
+        outline: none;
+        margin: 0;
+    }
+}
+
+/* btn styles */
+.btn{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    &:hover{
+        
+    }
+}
+
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+    position: relative;
+    padding: 0;
+    *zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+    overflow: visible!important;
+    transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next{
+    position: relative;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box; 
+}
+
+.bx-wrapper .bx-prev:before,
+.bx-wrapper .bx-next:before{
+    background: url('img/sprite.png') no-repeat top left;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 18px;
+    margin-top: -6px;
+    margin-left: -9px;
+}
+
+.bx-wrapper .bx-prev{
+    border-right: 1px solid #ddd; 
+}
+
+.bx-wrapper .bx-prev:before {
+    background-position: 0 -572px;
+}
+
+.bx-wrapper .bx-next:before {
+    background-position: 0 -367px;
+}
+
+.bx-wrapper .bx-prev:hover {
+    background: #ddd;
+
+    &:before{
+        background-position: 0 -504px;
+    }
+}
+
+.bx-wrapper .bx-next:hover {
+    background: #ddd;
+
+    &:before{
+        background-position: 0 -299px;
+    }
+}
+
+.bx-wrapper .bx-controls-direction a {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 32px;
+    background: #f0f0f0;
+    font-size: 0;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}

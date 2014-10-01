@@ -1,0 +1,22 @@
+/* start the cosmetics project styles - this style not crashed layout */
+
+/* sprete */
+.sprite-ico--ticket{ background-position: 0 0; width: 19px; height: 30px; } 
+.sprite-ico-calendar{ background-position: 0 -80px; width: 24px; height: 27px; } 
+.sprite-ico-down{ background-position: 0 -157px; width: 42px; height: 28px; } 
+.sprite-ico-find{ background-position: 0 -235px; width: 14px; height: 14px; } 
+.sprite-ico-next-active{ background-position: 0 -299px; width: 11px; height: 18px; } 
+.sprite-ico-next{ background-position: 0 -367px; width: 11px; height: 18px; } 
+.sprite-ico-point{ background-position: 0 -435px; width: 16px; height: 19px; } 
+.sprite-ico-prev-active{ background-position: 0 -504px; width: 11px; height: 18px; } 
+.sprite-ico-prev{ background-position: 0 -572px; width: 11px; height: 18px; } 
+.sprite-ico-up{ background-position: 0 -640px; width: 42px; height: 28px; } 
+
+#container li {
+    background: url('img/sprite.png') no-repeat top left;
+}
+
+/* transitions */
+a{
+	transition: color .5s ease;
+}
