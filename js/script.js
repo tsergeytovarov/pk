@@ -20,6 +20,7 @@ $(function(){
 	// открытие закрытие по верхней панели
 	$('.calendar').find('.header').on('click', function(){
 		$(this).parents('.calendar').toggleClass('active');
+		$('.over').toggleClass('active');
 	})
 
 	// чехорда дат в контролах
@@ -34,7 +35,10 @@ $(function(){
 		// вверх
 		$('.controls').find('.prev').on('click',function(){
 
-			if ( !$('.calendar').hasClass('active') ) $('.calendar').addClass('active');
+			if ( !$('.calendar').hasClass('active') ) { 
+				$('.calendar').addClass('active');
+				$('.over').addClass('active');
+			}
 
 			if ( $(this).hasClass('disabled') ) return false; 
 
@@ -62,7 +66,10 @@ $(function(){
 		// вниз
 		$('.controls').find('.next').on('click',function(){
 
-			if ( !$('.calendar').hasClass('active') ) $('.calendar').addClass('active');
+			if ( !$('.calendar').hasClass('active') ){ 
+				$('.calendar').addClass('active');
+				$('.over').addClass('active');
+			}
 
 			if ( $(this).hasClass('disabled') ) return false; 
 
@@ -90,7 +97,10 @@ $(function(){
 		// активация даты
 		$('.date-slider').find('a').on('click',function(){
 
-			if ( !$('.calendar').hasClass('active') ) $('.calendar').addClass('active');
+			if ( !$('.calendar').hasClass('active') ){ 
+				$('.calendar').addClass('active');
+				$('.over').addClass('active');
+			}
 
 			$('.date-slider').find('a').removeClass('active');
 			
@@ -101,7 +111,11 @@ $(function(){
 			return false;
 		})
 
-
+		// закрытие белой области
+		$('.over').on('click',function(){
+			$(this).removeClass('active');
+			$('.calendar').removeClass('active');
+		})
 
 	// при ресайзе окна
 	$(window).resize(function(){
