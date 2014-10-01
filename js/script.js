@@ -34,80 +34,49 @@ $(function(){
 
 		// вверх
 		$('.controls').find('.prev').on('click',function(){
-
 			if ( !$('.calendar').hasClass('active') ) { 
 				$('.calendar').addClass('active');
 				$('.over').addClass('active');
 			}
-
 			if ( $(this).hasClass('disabled') ) return false; 
-
 			value_element_bottom = value_element_bottom - 60;		
 			$('.date-slider').css('bottom', value_element_bottom);
-
 			col_element_top = col_element_top - 1;
 			col_element_bottom = col_element_bottom + 1;
-
-			if( col_element_top == 0){
-				$('.controls').find('.prev').addClass('disabled');
-			} else {
-				$('.controls').find('.prev').removeClass('disabled');
-			}
-			if( col_element_bottom == 0){
-				$('.controls').find('.next').addClass('disabled');
-			} else {
-				$('.controls').find('.next').removeClass('disabled');
-			}
-
+			if( col_element_top == 0){ $('.controls').find('.prev').addClass('disabled')} 
+			else { $('.controls').find('.prev').removeClass('disabled')}
+			if( col_element_bottom == 0){ $('.controls').find('.next').addClass('disabled')} 
+			else {$('.controls').find('.next').removeClass('disabled')}
 			return false;
-
 		})
 
 		// вниз
 		$('.controls').find('.next').on('click',function(){
-
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
 				$('.over').addClass('active');
 			}
-
 			if ( $(this).hasClass('disabled') ) return false; 
-
 			value_element_bottom = value_element_bottom + 60;		
 			$('.date-slider').css('bottom', value_element_bottom);
-
 			col_element_top = col_element_top + 1;
 			col_element_bottom = col_element_bottom - 1;
-
-			if( col_element_top == 0){
-				$('.controls').find('.prev').addClass('disabled');
-			} else {
-				$('.controls').find('.prev').removeClass('disabled');
-			}
-			if( col_element_bottom == 0){
-				$('.controls').find('.next').addClass('disabled');
-			} else {
-				$('.controls').find('.next').removeClass('disabled');
-			}
-
+			if( col_element_top == 0){$('.controls').find('.prev').addClass('disabled')} 
+			else {$('.controls').find('.prev').removeClass('disabled')}
+			if( col_element_bottom == 0){$('.controls').find('.next').addClass('disabled')} 
+			else {$('.controls').find('.next').removeClass('disabled')}
 			return false;
-
 		})
 
 		// активация даты
 		$('.date-slider').find('a').on('click',function(){
-
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
 				$('.over').addClass('active');
 			}
-
 			$('.date-slider').find('a').removeClass('active');
-			
 			$(this).addClass('active');
-
 			$('.current-date').text( $(this).attr('data-text') );
-
 			return false;
 		})
 
