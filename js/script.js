@@ -86,6 +86,12 @@ $(function(){
 			$('.calendar').removeClass('active');
 		})
 
+	// скролл наверх
+	$('.to-top').on('click', function() {
+		$('body,html').animate({ scrollTop: 0 }, 500);
+		return false;
+	});
+
 	// при ресайзе окна
 	$(window).resize(function(){
 
