@@ -759,6 +759,61 @@ header{
 	}
 }
 
+/*====================
+ footer
+====================*/
+
+.events-page{
+
+	.col-1{
+		width: 100%;
+		font-size: 0;
+	}
+
+	.item{
+		width: 33.3333%;
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.events-sort{
+	padding: 15px 50px;
+	background: #f0f0f0;
+
+	p{
+		font-size: 18px;
+		line-height: 32px;
+		color: #000;
+	}
+
+	a{
+		width: 40px;
+		height: 40px;
+		margin-left: 15px;
+
+		&:hover{
+			opacity: .8;
+		}
+
+		&:nth-child(2){
+			background: url(img/ico-sort-1.png) no-repeat center;
+		}
+		&:nth-child(3){
+			background: url(img/ico-sort-2.png) no-repeat center;
+		}
+		&:nth-child(4){
+			background: url(img/ico-sort-3.png) no-repeat center;
+		}
+		&:nth-child(5){
+			background: url(img/ico-sort-4.png) no-repeat center;
+		}
+	}
+}
+
 
 /*====================
  footer
