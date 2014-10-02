@@ -6,6 +6,14 @@
 /*==============
  main page
 ==============*/
+@media (max-width: 1400px) {
+	
+	.afisha-page .afisha-item{
+		width: 33.333333%;
+	}
+
+}
+
 @media (max-width: 1024px) {
 
 	.logo-small{display: block!important}
@@ -46,6 +54,15 @@
 	.calendar .header {height: 78px}
 
 	.partners .partners-container a{width: 50%}
+
+	.events-page .item{
+		width: 50%;
+	}
+
+	.afisha-page .afisha-item{
+		width: 50%;
+	}
+
 
 }
 
@@ -148,4 +165,13 @@
 	footer .to-top{
 		display: inline-block;
 	}
+
+	.events-page .item{
+		width: 100%;
+	}
+
+	.afisha-page .afisha-item{
+		width: 100%;
+	}
+
 }

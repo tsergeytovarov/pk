@@ -760,7 +760,7 @@ header{
 }
 
 /*====================
- footer
+ evebts page
 ====================*/
 
 .events-page{
@@ -814,6 +814,124 @@ header{
 	}
 }
 
+
+/*====================
+ evebts page
+====================*/
+.afisha-page{
+	font-size: 0;
+
+	.afisha-item{
+		width: 25%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 5px;
+	}
+
+	.col-1{
+		width: 100%;
+	}
+}
+
+.afisha-item{
+
+	img{width: 100%}
+
+	.image{
+		position: relative;
+
+		p{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			font-size: 24px;
+			line-height: 28px;
+			background: #f0f0f0;
+			padding: 10px 20px 20px;
+		}
+	}
+
+	.content-text{
+		padding: 20px;
+		
+		h2{
+			font-size: 36px;
+			line-height: 44px;
+			color: #ff3366;
+			padding: 0;
+			background: #fff;
+		}	
+
+		p{
+			font-size: 18px;
+			color: #000;
+			line-height: 24px;
+			margin: 10px 0 20px;
+		}
+
+		.time{
+			width: 80px;
+			font-size: 13px;
+			line-height: 16px;
+		}
+
+		.rounded{
+			text-transform: uppercase;
+			color: #686868;
+			border: 2px solid #686868;
+			font-size: 15px;
+			padding: 5px 7px 9px;
+			margin-top: 12px;
+
+			&:hover{
+				color: #000;
+				border: 2px solid #000;
+			}
+		}
+	}
+}
+
+.afisha-top{
+	background: #f0f0f0;
+
+	a, p{
+		vertical-align: middle;
+	}
+
+	.calendar-big{
+		width: 70px;
+		height: 70px;
+		background: #ff3366 url(img/ico-calendar-big.png) no-repeat center;
+		margin-right: 30px;
+	}
+
+	.control{
+		width: 30px;
+		height: 30px;
+
+		&:hover{
+			opacity: .8;
+		}
+	}
+
+	.prev{
+		background: url(img/ico-prev-month.png) no-repeat center;
+	}
+	.next{
+		background: url(img/ico-next-month.png) no-repeat center;
+	}
+
+	p{
+		padding-left: 30px;
+		background: url(img/ico-calendar-2.png) no-repeat -5px -7px;
+		font-size: 22px;
+		line-height: 26px;
+		padding-bottom: 7px;
+		color: #666;
+		margin: 0 20px;
+	}
+}
 
 /*====================
  footer
