@@ -97,6 +97,12 @@ $(function(){
 		return false;
 	});
 
+	// закрытие тизера
+	$('.close-tizer').on('click', function(){
+		$(this).parents('.tizer').fadeOut(300);
+		return false;
+	})
+
 	// при ресайзе окна
 	$(window).resize(function(){
 

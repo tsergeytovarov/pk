@@ -45,6 +45,8 @@
 
 	.calendar .header {height: 78px}
 
+	.partners .partners-container a{width: 50%}
+
 }
 
 @media (max-width: 800px) {
@@ -134,7 +136,7 @@
 	.fast-blocks .col-1,
 	.second{display: none}
 
-	.calendar{display: none}
+	.calendar, .partners{display: none}
 
 	.main-wrapper {padding-right: 0}
 
