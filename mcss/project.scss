@@ -934,6 +934,82 @@ header{
 }
 
 /*====================
+ contact
+====================*/
+
+.map{
+	width: 100%;
+	height: 600px;
+}
+
+.contact-container{
+
+	.col{
+		width: 50%;
+		padding: 25px;
+	}
+
+	h2{
+		font-size: 34px;
+		margin-bottom: 15px;
+	}
+
+	p{
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+
+	a{
+		font-size: 18px;
+		line-height: 24px;
+		color: #000;
+		text-decoration: underline;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	form{
+		width: 100%;
+		max-width: 470px;
+
+		input[type='text'],
+		textarea{
+			width: 100%;
+			font-size: 18px;
+			line-height: 27px;
+			margin-bottom: 25px;
+		}
+
+		input[type='text']{
+			height: 60px;
+		}
+
+		textarea{
+			height: 250px;
+			resize: none;
+		}
+
+		.rounded{
+			background: transparent;
+			border: 2px solid #6d6d6d;
+			color: #6d6d6d;
+			border-radius: 0;
+			font-size: 22px;
+			line-height: 22px;
+			padding: 5px 25px 15px;
+
+			&:hover{
+				border: 2px solid #000;
+				color: #000;
+			}
+		}
+	}
+}
+
+/*====================
  footer
 ====================*/
 

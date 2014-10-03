@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Приют комедианта - Главная</title>
+    
+    <link rel="stylesheet" href="mcss/style.css">
+    
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]--> 
+
+</head>
+<body>
+
+    <!-- основной центральный блок сайта -->
+    <div class="main-wrapper inbox clearfix">
+        
+        <!-- header -->
+        <header class='clearfix container'>
+
+            <!-- logo -->
+            <a href="index.html" class="logo to-left">
+                <img src="img/logo.png" alt='' class="logo-big" />
+                <img src="img/logo-small.png" alt='' class="logo-small" />
+            </a>
+
+            <!-- find form -->
+            <div class="to-right search-form clearfix">
+
+                <a href="#" class="open-menu"></a>
+
+                <form action="" method="" >
+                    <input type="text" />
+                </form>
+            </div>
+
+            <!-- nav -->
+            <nav>
+                <a href="#">Театр</a>
+                <a href="#">Афиша</a>
+                <a href="#">Актеры</a>
+                <a href="events.html">Спектакли</a>
+                <a href="#">Контакты</a>
+            </nav>
+
+        </header>
+
+        <!-- map -->
+        <section class='map' id='map-canvas'></section>
+
+        <!-- conetent -->
+        <section class="contact-container inbox clearfix">
+            
+            <!-- col1 -->
+            <div class="col to-left inbox">
+                <h2>Контакты</h2>
+                <p>Санкт-Петербургское государственное бюджетное учреждение культуры «Государственный драматический театр «Приют комедианта» (СПбГБУК ГДТ «Приют комедианта»)</p>
+                <p>Юридический адрес: Мучной пер., д. 9/27, г. Санкт-Петербург 191023</p>
+                <p>Фактический адрес: ул. Садовая, д. 27/9, ст. м. «Сенная пл.», «Садовая», «Спасская».</p>
+                <p>Приемная: т/ф +7 (812) 310-33-09</p>
+                <p>Администраторы: т/ф +7 (812) 310-10-74</p>
+                <p>Заказ билетов: +7 (812) 310-66-86 ежедневно с 11 до 18 часов, кроме выходных и праздничных дней; <br/> +7 (812) 310-33-14 ежедневно с 10 до 21 часов</p>
+                <p>Касса театра: +7 (812) 310-33-14</p>
+                <p>Электронная почта: <a href='mailto:admin@pkteatr.ru'>admin@pkteatr.ru</a></p>
+                <p>Жалобы и предложения: +7 (812) 310-10-83</p>
+            </div>
+
+            <!-- col2 -->
+            <div class="col to-right inbox clearfix">
+                <h2>Напишите нам</h2>
+                <form action="" method="">
+                    <input type="text" placeholder='Имя' />
+                    <input type="text" placeholder='Email' />
+                    <textarea>Текст сообщения</textarea>
+                    <button type="submit" class="rounded to-right">Отправить</button>
+                </form>
+            </div>
+
+        </section>
+
+
+        <!-- footer -->
+        <footer class='clearfix'>
+
+            <!-- to-top  -->
+            <a href="#" class="to-top inline"></a>
+            
+            <!-- column1 -->
+            <div class="column to-left">
+                <p>© 2011–2014</p>
+                <p>Государственный драматический театр «Приют комедианта»</p>
+            </div>
+
+            <!-- column2 -->
+            <div class="column to-left">
+                <p>Электронная почта: <a href="mailto:admin@pkteatr.ru">admin@pkteatr.ru</a></p>
+                <p>Касса театра: +7 (812) 310-33-14</p>
+                <a href="#" class="to-map">Как добраться</a>
+            </div>
+            
+            <!-- column3 -->
+            <div class="column to-left">
+                <a href="#" class="socio inline"><img src="img/fb.jpg" alt="" /></a>
+                <a href="#" class="socio inline"><img src="img/tw.jpg" alt="" /></a>
+                <a href="#" class="socio inline"><img src="img/vk.jpg" alt="" /></a>
+                <a href="#" class="socio inline"><img src="img/in.jpg" alt="" /></a>
+            </div>
+
+        </footer>
+
+    </div>
+    
+    <!-- сайдбар с календарем мероприятий -->
+    <aside class='calendar'>
+        
+        <div class="container clearfix">
+            
+            <!-- header -->
+            <div class="header">
+                <p class="current-date">Суббота, 21 Июня</p>
+            </div>
+
+            <!-- left-col -->
+            <div class="controls to-left">
+                
+                <a href="#" class="control prev"> </a>
+
+                <div class="date-container">
+
+                    <div class="date-slider">
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 16 Июня'>
+                            <span>16</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 17 Июня'>
+                            <span>17</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 18 Июня'>
+                            <span>18</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 19 Июня'>
+                            <span>19</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 20 Июня'>
+                            <span>20</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 21 Июня'>
+                            <span>21</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 22 Июня'>
+                            <span>22</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 23 Июня'>
+                            <span>23</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 24 Июня'>
+                            <span>24</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 25 Июня'>
+                            <span>25</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 26 Июня'>
+                            <span>26</span> Пн
+                        </a>
+                        <!-- date -->
+                        <a href="#" class="date-select" data-text='Суббота, 27 Июня'>
+                            <span>27</span> Пн
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="#" class="control next disabled"> </a>
+
+            </div>
+
+            <!-- right col -->
+            <div class="content to-right">
+                
+                <img src="img/spectakl.jpg" alt="" />
+
+                <div class="content-text">
+
+                    <h2>Две свадьбы и один жених</h2>
+
+                    <p>По пьесам А.П. Чехова «Медведь» и «Предложение».  Комедия. В основе спектакля две короткие чеховские пьесы - «Предложение» и «Медведь». Нюансы отношений между мужчиной и женщиной Чехов живописует в шутливо-ироничном тоне. 16 +</p>
+
+                    <p class="inline time">19:00-21:30</p>
+
+                    <a href="#" class="rounded">купить билет</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <div class="over"></div>
+
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/min/script.min.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script>
+
+    $(function(){
+        var mapOptions = {
+            zoom: 17,
+            center: new google.maps.LatLng(59.9292, 30.323),
+            draggable: true
+        }
+        
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var image = 'img/marker.png';
+        var myLatLng = new google.maps.LatLng(59.929209, 30.323226,19);
+        var beachMarker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: image
+        });
+    })
+     
+    </script>
+</body>
+</html>

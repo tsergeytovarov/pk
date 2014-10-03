@@ -12,6 +12,8 @@
 		width: 33.333333%;
 	}
 
+	.map{ height: 500px}
+
 }
 
 @media (max-width: 1024px) {
@@ -62,7 +64,8 @@
 	.afisha-page .afisha-item{
 		width: 50%;
 	}
-
+	
+	.map{ height: 400px}
 
 }
 
@@ -172,6 +175,14 @@
 
 	.afisha-page .afisha-item{
 		width: 100%;
+	}
+
+	.contact-container .col {
+		width: 100%;
+		
+		form{
+			max-width: 100%;
+		}
 	}
 
 }
