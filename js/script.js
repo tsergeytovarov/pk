@@ -14,6 +14,8 @@ $(function(){
 	  controls: false
 	});
 
+	// custom scrollbar
+	$(".scroll-container").customScrollbar();
 
 	$('.bx-controls-direction').find('a').height( $('.bx-controls-direction a').width() )
 
