@@ -191,4 +191,19 @@
 
 	.news-clontainer article{width: 100%}
 
+	.single-news{
+		padding: 20px 15px 60px;
+		border-bottom: 1px solid #ccc;
+
+		img{
+			width: 100%;
+			float: none;
+		}
+
+		.text{
+			padding: 20px 0 0;
+			width: 100%;
+		}
+	}
+
 }
