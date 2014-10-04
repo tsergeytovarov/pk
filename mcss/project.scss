@@ -1120,6 +1120,62 @@ header{
 }
 
 /*====================
+ PERSONS PAGE
+====================*/
+
+.alfavit{
+	margin-top: 18px;
+
+	a{
+		@extend .inline;
+		color: #666;
+		font-size: 22px;
+		line-height: 22px;
+		margin-right: 10px;
+		text-decoration: none;
+
+		&:hover{
+			color: #000;
+		}
+	}
+}
+
+.person-container{
+	padding: 0 3px;
+
+	.item{
+		text-decoration: none;
+		width: 150px;
+		min-height: 300px;
+		margin-bottom: 25px;
+		margin: 15px 12px 0;
+
+		img{
+			width: 150px;
+			height: 220px;
+		}
+
+		p{
+			font-size: 18px;
+			color: #666;
+			line-height: 24px;
+			margin-top: 5px;
+		}
+
+		.small{
+			font-size: 16px;
+			color: #000;
+			font-style: italic;
+		}
+
+		&:hover{
+			opacity: .7;
+		}
+	
+	}
+}
+
+/*====================
  footer
 ====================*/
 
