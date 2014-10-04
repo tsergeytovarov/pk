@@ -22,6 +22,7 @@ body{
 .hidden{
 	overflow: hidden;
 }
+
 /*=================
  base figure
 =================*/
@@ -117,7 +118,6 @@ header{
 /*=================
  calendar - aside
 =================*/
-
 .calendar{
 	position: fixed;
 	right: -297px;
@@ -1187,6 +1187,97 @@ header{
 	}
 }
 
+/*====================
+ ABOUT PAGE
+====================*/
+
+.about-top{
+	padding: 0 15px;
+	background: #f0f0f0;
+
+	a{
+		padding: 15px 0 25px;
+		font-size: 22px;
+		color: #666;
+		margin-right: 15px;
+		text-decoration: none;
+		box-sizing: border-box;
+
+		&:hover{
+			color: #000;
+			border-bottom: 4px solid #000;
+		}
+	}
+
+	.active{
+		color: #000;
+		border-bottom: 4px solid #000;
+	}
+}
+
+.content{
+	
+	.bx-viewport{
+		overflow: hidden!important;
+	}
+
+	.bx-pager{
+		bottom: 50px;
+		text-align: left;
+		padding-left: 65px;
+
+		a{
+			width: 20px;
+			height: 20px;
+			background: transparent!important;
+			border: 2px solid #fff;
+			border-radius: 50%!important;
+			margin: 0 15px 0 0!important;
+		}
+
+		.active{
+			background: #fff!important;
+		}
+	}
+
+	.content-slider{
+
+		li{
+			height: 600px;
+
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			p{
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				font-size: 55px;
+				line-height: 66px;
+				color: #fff;
+			}
+		}
+	}
+
+	.text{
+		width: 80%;
+		box-sizing: border-box;
+		padding: 30px 40px;
+
+		P{
+			font-size: 16px;
+			line-height: 24px;
+			color: #000;
+			margin-bottom: 25px;
+		}
+	}
+
+}
 /*====================
  footer
 ====================*/

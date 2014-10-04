@@ -7,6 +7,14 @@ $(function(){
 	  pager: false
 	});
 
+	// слайдер в контенте
+	$('.content-slider').bxSlider({
+	  mode: 'horizontal',
+	  auto: true,
+	  controls: false
+	});
+
+
 	$('.bx-controls-direction').find('a').height( $('.bx-controls-direction a').width() )
 
 	// открытие меню в мобильной версии
