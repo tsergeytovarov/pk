@@ -760,7 +760,7 @@ header{
 }
 
 /*====================
- evebts page
+ events page
 ====================*/
 
 .events-page{
@@ -816,7 +816,7 @@ header{
 
 
 /*====================
- evebts page
+ afisha page
 ====================*/
 .afisha-page{
 	font-size: 0;
@@ -1007,6 +1007,54 @@ header{
 			}
 		}
 	}
+}
+
+/*================= 
+ news page 
+=================*/
+
+.news-top{
+
+	padding: 15px 30px 25px;
+	margin-bottom: 20px;	
+
+	a{
+		font-size: 22px;
+		line-height: 22px;
+		text-decoration: none;
+		color: #666;
+		margin-right: 25px;
+
+		&:hover{
+			color: #000;
+		}
+	}
+
+	.active{
+		color: #000;
+	}
+}
+
+.news-clontainer.news{
+	padding: 0 0 0;
+}
+
+.news-clontainer{
+	font-size: 0;
+
+	article{
+		box-sizing: border-box;
+		width: 25%;
+		padding: 0 15px 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.item{
+		border-bottom: 0;
+		min-height: 160px;
+	}
+
 }
 
 /*====================
