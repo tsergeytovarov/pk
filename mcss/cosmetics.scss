@@ -20,3 +20,8 @@
 *{
 	transition: color .5s ease;
 }
+
+.date-slider a,
+.date-slider a span{
+	transition: none;
+}

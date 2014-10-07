@@ -96,6 +96,7 @@ $(function(){
 
 		// закрытие белой области
 		$('.over').on('click',function(){
+			$('.date-slider').find('a').removeClass('active');
 			$(this).removeClass('active');
 			$('.calendar').removeClass('active');
 			$('body, html').removeClass('hidden');
