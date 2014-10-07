@@ -41,9 +41,9 @@ $(function(){
 
 		// переменные
 		var col_element_date = $('.date-slider').find('a').length;
-		var col_element_date_hidden = col_element_date - 7;
-		var col_element_top = col_element_date_hidden;
-		var col_element_bottom = 0;
+		var col_element_date_step = col_element_date/7;
+		var col_element_top = 0;
+		var col_element_bottom = col_element_date_step-1;
 		var value_element_bottom = 0;
 
 		// вверх
@@ -55,8 +55,8 @@ $(function(){
 				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
-			value_element_bottom = value_element_bottom - 60;		
-			$('.date-slider').css('bottom', value_element_bottom);
+			value_element_bottom = value_element_bottom + (60*7);	
+			$('.date-slider').css('top', value_element_bottom);
 			col_element_top = col_element_top - 1;
 			col_element_bottom = col_element_bottom + 1;
 			if( col_element_top == 0){ $('.controls').find('.prev').addClass('disabled')} 
@@ -75,8 +75,8 @@ $(function(){
 				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
-			value_element_bottom = value_element_bottom + 60;		
-			$('.date-slider').css('bottom', value_element_bottom);
+			value_element_bottom = value_element_bottom - (60*7);		
+			$('.date-slider').css('top', value_element_bottom);
 			col_element_top = col_element_top + 1;
 			col_element_bottom = col_element_bottom - 1;
 			if( col_element_top == 0){$('.controls').find('.prev').addClass('disabled')} 
