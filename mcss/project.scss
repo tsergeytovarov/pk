@@ -83,8 +83,13 @@ header{
 	}
 }
 .search-form{
+	font-size: 0;
 	position: relative;
 	margin-top: 20px;
+
+	form{
+		display: inline-block;
+	}
 	
 	input[type='text']{
 		width: 160px;
@@ -93,18 +98,19 @@ header{
 		padding-left: 30px;
 	}
 
-	&:before{
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: -40px;
-		background: url('img/sprite.png') no-repeat;
-		background-position: 0 2px; 
-		width: 19px; 
-		height: 33px;
-	}
+}
 
+.bileter{
+	display: inline-block;
+	vertical-align: top;
+	background: url('img/ico--ticket.png') no-repeat center;
+	width: 19px;
+	height: 33px;
+	margin-right: 20px;
+
+	&:hover{
+		background: url('img/ico--ticket-2.png') no-repeat center;
+	}
 }
 
 .open-menu{
