@@ -47,7 +47,7 @@ $(function(){
 		$('.controls').find('.prev').on('click',function(){
 			if ( !$('.calendar').hasClass('active') ) { 
 				$('.calendar').addClass('active');
-				$('.over').addClass('active');
+				$('.over').fadeIn(300);
 				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
@@ -66,7 +66,7 @@ $(function(){
 		$('.controls').find('.next').on('click',function(){
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
-				$('.over').addClass('active');
+				$('.over').fadeIn(300);
 				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
@@ -85,7 +85,7 @@ $(function(){
 		$('.date-slider').find('a').on('click',function(){
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
-				$('.over').addClass('active');
+				$('.over').fadeIn(300);
 				$('body, html').addClass('hidden');
 			}
 			$('.date-slider').find('a').removeClass('active');
@@ -97,7 +97,7 @@ $(function(){
 		// закрытие белой области
 		$('.over').on('click',function(){
 			$('.date-slider').find('a').removeClass('active');
-			$(this).removeClass('active');
+			$(this).fadeOut(300);
 			$('.calendar').removeClass('active');
 			$('body, html').removeClass('hidden');
 		})

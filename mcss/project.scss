@@ -680,12 +680,13 @@ header{
 		border-radius: 0;
 		color: #666;
 		font-size: 18px;
-		line-height: 25px;
 		margin-bottom: 20px;
+		padding-bottom: 10px;
 
 		&:focus{
 			border: 1px solid #333;
 			color: #333;
+			
 		}
 	}
 
@@ -760,14 +761,23 @@ header{
 
 		img{width: 100%}
 
-		p{
+		a{
 			position: absolute;
+			display: block;
 			top: 70px;
 			left: -90%;
 			width: 130px;
 			font-size: 22px;
 			line-height: 24px;
 			color: #ff3366;
+			text-decoration: none;
+
+			span{
+				display: block;
+				font-size: 14px;
+				line-height: 18px;
+				margin-top: 10px;
+			}
 		}
 	}
 }
