@@ -109,7 +109,7 @@ $(function(){
 	});
 
 	// закрытие тизера
-	$('.close-tizer').on('click', function(){
+	$('.close-tizer-action').on('click', function(){
 		$(this).parents('.tizer').fadeOut(300);
 		return false;
 	})
