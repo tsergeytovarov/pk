@@ -203,6 +203,14 @@ header{
 				bottom: 0;
 				width: 100%;
 				transition: all .3s ease;
+
+				.current-day{
+					background: url(img/ico-active-day.png) no-repeat center;
+
+					&:hover{
+						background: #fff;
+					}
+				}
 			}
 
 			a{
