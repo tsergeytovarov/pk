@@ -30,7 +30,10 @@ $(function(){
 	// открытие закрытие по верхней панели
 	$('.calendar').find('.header').on('click', function(){
 		$(this).parents('.calendar').toggleClass('active');
-		$('.over').toggleClass('active');
+		$('.over').toggleClass('go');
+		if ( $('.over').hasClass('go') ) $('.over').fadeIn(300);
+		else  $('.over').fadeOut(300);
+		
 		$('body, html').toggleClass('hidden');
 	})
 
@@ -48,6 +51,7 @@ $(function(){
 			if ( !$('.calendar').hasClass('active') ) { 
 				$('.calendar').addClass('active');
 				$('.over').fadeIn(300);
+				$('.over').addClass('go');
 				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
@@ -67,6 +71,7 @@ $(function(){
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
 				$('.over').fadeIn(300);
+				$('.over').addClass('go');
 				$('body, html').addClass('hidden');
 			}
 			if ( $(this).hasClass('disabled') ) return false; 
@@ -86,6 +91,7 @@ $(function(){
 			if ( !$('.calendar').hasClass('active') ){ 
 				$('.calendar').addClass('active');
 				$('.over').fadeIn(300);
+				$('.over').addClass('go');
 				$('body, html').addClass('hidden');
 			}
 			$('.date-slider').find('a').removeClass('active');
@@ -98,6 +104,7 @@ $(function(){
 		$('.over').on('click',function(){
 			$('.date-slider').find('a').removeClass('active');
 			$(this).fadeOut(300);
+			$(this).removeClass('go');
 			$('.calendar').removeClass('active');
 			$('body, html').removeClass('hidden');
 		})
