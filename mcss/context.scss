@@ -22,6 +22,10 @@
 
 @media (max-width: 1024px) {
 
+	body{
+		font-family: 'PT Sans', sans-serif;
+	}
+
 	.logo-small{display: block!important}
 
 	.logo-big{display: none}
@@ -78,6 +82,27 @@
 }
 
 @media (max-width: 800px) {
+
+
+	.bileter{
+		display: none;
+	}
+
+	.search-form form {
+		display: block;
+	}
+
+	.alfavit {
+		margin-top: 18px;
+		padding: 3px;
+		display: block;
+		padding-left: 100px;
+	}
+	.alfavit a {
+		margin: 5px 10px;
+	}
+
+	.afisha-top .calendar-big {float: left}
 
 	.logo-small{display: none!important}
 
