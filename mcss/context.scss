@@ -76,6 +76,35 @@
 
 	.spectakl-content .person-container .item {width: 50%}
 
+
+	/* прав ка шрифтов */
+	.tizer .rounded {padding: 22px 20px 20px}
+
+	.big-image-section .content .rounded {padding: 18px 17px 16px}
+
+	a.rounded {padding: 9px 8px 7px}
+
+
+	.event .content .rounded {padding: 17px 20px 15px}
+
+
+	.subscribe button {padding: 14px 12px 12px;}
+
+	.calendar .content .content-text .rounded {padding: 19px 10px 17px}
+
+	.afisha-top p{
+		line-height: 40px;
+		margin-top: 10px;
+	}
+
+	.afisha-item .image p {padding: 22px 20px 20px}
+
+	.afisha-item .content-text .rounded {padding: 11px 7px 9px}
+	
+	.contact-container form .rounded {padding: 17px 25px 15px}
+
+	
+
 }
 
 @media (max-width: 800px) {
