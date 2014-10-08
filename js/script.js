@@ -8,11 +8,10 @@ $(function(){
 	});
 
 	// слайдер в контенте
-	$('.content-slider').bxSlider({
-	  mode: 'horizontal',
-	  auto: true,
-	  controls: false
-	});
+    $('.content-slider').bxSlider({
+        auto: true,
+        controls: false
+    });
 
 	// custom scrollbar
 	$(".scroll-container").customScrollbar();
